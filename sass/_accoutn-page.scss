@@ -1,0 +1,27 @@
+.table-align-center{
+    tr{
+        td{
+            vertical-align: middle;
+        }
+    }
+}
+.account-tbl-img{
+    border-radius: 50%;
+    border: 1px solid $border-color;
+    padding: .15rem;
+    img{
+        border-radius: 50%;
+        width: 100%;
+    }
+}
+
+// account detail page scss
+/////////////////////////////////////
+
+.account-slider-wrap{
+    .swiper-slide{
+        img{
+            max-width: 100%;
+        }
+    }
+}

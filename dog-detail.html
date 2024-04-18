@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Breeder Admin</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  </head>
+  <body>
+    
+<div id="layout-main">
+  <header class="header-main">
+    <div class="header-topbar">
+        <div class="header-topbar-right">
+            <div class="switch-account-wrap">
+                <button type="button" onclick="handlebarTheme()" class="btn btn-sm btn-light rounded-circle light-dark-mode">
+                    <i class="bi-moon"></i>
+                </button>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="avatar-xs absolute-img"><img class="rounded-circle" src="/img/user-1.jpg" alt=""></div>
+                <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" eriaexpand="false"><h5 class="d-inline fs-14 ms-2 mb-0">Sue Allen</h5></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Profile</a></li>
+                    <li><a href="#" class="dropdown-item">Logout</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- sidebar menu -->
+    <aside class="navbar-menu">
+      <div class="navbar-brand-wrap">
+          <a class="" href="index.html">
+          <div class="logo-lg">
+              <img src="./img/dogbreeder-logo.svg">
+              <span class="logo-text">Your Dog 
+                  <br>
+                  <sub>Breeder</sub>
+              </span>
+          </div>
+         
+      </a>
+      </div>
+      
+      <p class="navbar-label">Menu</p>
+      <div class="container-fluid">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="material-symbols-outlined">Group</i> <span>Users</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="appointment-type.html"><i class="material-symbols-outlined">Pending_Actions</i> <span>Appointment Types</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="appointment.html"><i class="material-symbols-outlined">Date_range</i> <span>Appointment</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="breeders.html"><i class="material-symbols-outlined">Location_Away</i> <span>Breeders</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="breeds.html"><i class="material-symbols-outlined">Female</i> <span>Breeds</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="dog.html"> <i class="fa-solid fa-dog"></i> <span>Dogs</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="leads.html"> <i class="material-symbols-outlined">Monitoring</i> <span>Leads</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="litters.html"> <i class="material-symbols-outlined">Pets</i> <span>Litters</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registeries.html"> <i class="material-symbols-outlined">How_to_reg</i> <span>Registries</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="waiting-list.html"> <i class="material-symbols-outlined">Pending_Actions</i> <span>Waiting List</span></a>
+              </li>
+            </ul>
+      </div>
+  </aside>
+    <!-- page content -->
+    <div class="main-content-wrap">
+    <div class="page-container base-bg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="product-slider vertical-thumbnail">
+              <div class="swiper single-product mySwiper2 product-thumb-lg">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-8.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <!--  -->
+              <div class="swiper mySwiper product-thumb mt-2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/dog-md-8.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <div class="ps-md-4">
+              <h4>Showtime</h4>
+              <p>Bad ass dog, come see for yourself!</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis recusandae voluptatum dicta nihil, sed, ex illum libero nisi corrupti hic quis excepturi debitis,</p>
+              
+              <div class="d-flex mb-3">
+                <h5 class="fw-semibold label-name">Breeder</h5><span>:</span>
+                <h5 class="text-default ms-3">st-pete-bully-s</h5>
+              </div>
+              <div class="d-flex mb-3">
+                <h5 class="fw-semibold label-name">Breed</h5><span>:</span>
+                <h5 class="text-default ms-3">American-pit-bull-terrier</h5>
+              </div>
+              <div class="d-flex mb-3">
+                <h5 class="fw-semibold label-name">Registries</h5><span>:</span>
+                <h5 class="text-default ms-3">United Kennel Club</h5>
+              </div>
+              <div class="d-flex mb-3">
+                <h5 class="fw-semibold label-name">Slug</h5><span>:</span>
+                <h5 class="text-default ms-3">Showtime</h5>
+              </div>
+              <div class="d-flex mb-3">
+                <h5 class="fw-semibold label-name">Gender</h5><span>:</span>
+                <h5 class="text-default ms-3">Male</h5>
+              </div>
+              <div class="d-flex align-items-center">
+                <h4 class="text-primary mb-0 me-2">$200.00</h4><sub class="fs-18 text-decoration-line-through text-muted">$249.00</sub>
+              </div>
+              <div class="row g-1 mt-3">
+                <div class="col-auto">
+                  <div class="border border-primary text-primary d-flex rounded-3 p-3">
+                    <span class="material-symbols-outlined lh-1 fs-30">sell</span>
+                     <div class="ms-3">
+                      <h5 class="mb-0">For Sale</h5>
+                      <p class="text-default mb-0">False</p>
+                     </div>                        
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="border border-danger text-danger d-flex rounded-3 p-3">
+                    <span class="material-symbols-outlined lh-1 fs-30">shopping_cart</span>
+                     <div class="ms-3">
+                      <h5 class="mb-0">Sold</h5>
+                      <p class="text-default mb-0">False</p>
+                     </div>                        
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="border border-success text-success d-flex rounded-3 p-3">
+                    <span class="material-symbols-outlined lh-1 fs-30">radio_button_checked</span>
+                     <div class="ms-3">
+                      <h5 class="mb-0">Active</h5>
+                      <p class="text-default mb-0">False</p>
+                     </div>                        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="border-top mt-5 p-3">
+                <nav>
+                  <div class="nav nav-tabs border-tab" id="nav-tab" role="tablist">
+                    <button class="nav-link fs-18 active" id="pedigree-tab" data-bs-toggle="tab" data-bs-target="#pedigreeTab" type="button" role="tab" aria-controls="pedigree" aria-selected="true">Pedigree</button>
+                    <button class="nav-link fs-18" id="image-tab" data-bs-toggle="tab" data-bs-target="#dogImage" type="button" role="tab" aria-controls="dogImage" aria-selected="false">Images</button>
+                    
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="pedigreeTab" role="tabpanel" aria-labelledby="pedigree-tab" tabindex="0">
+                    <div class="ped-frame">
+                      <div class="ped-frame-inner">
+                          <div class="row">
+                              <div class="col-md-5 col-lg-4">
+                                  <div class="dog-col">
+                                      <div class="dog-main">
+                                          <div class="media d-flex">
+                                              <img src="./img/dog-md-1.jpg" class="align-self-center rounded" alt="...">
+                                              <div class="media-body flex-grow-1 ms-3">
+                                                  <h5 class="fs-16 mt-0">Showtime </h5>
+                                                  <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                  
+                              <div class="col-md-5 col-lg-4">
+                                  <div class="dog-col">
+                                      <div class="top-wrap">                                          
+                                          <div class="f-child-wrap border-style ">
+                                            <div class="father-md-top d-flex">
+                                              <div class="avatar-sm flex-shrink-0"><img class="w-100 rounded" src="/img/dog-md-7.jpg" alt=""></div>
+                                              <div class="flex-grow-1 ms-3">
+                                                <h5 class="fs-16 mb-1">Father</h5>
+                                                <p class="mb-0">Var son of Czar</p>
+                                              </div>
+                                              
+                                          </div>
+                                              
+                                              <div class="inner-child-wrap">                                                
+                                                <div class="f-child-wrap-inner-top">
+                                                  <div class="overlay-icon"></div>
+                                                  <h6 class="mb-1">Xoloitzcuintle</h6>
+                                                  <p>Lorem Ipsum dummy text
+                                                      Lorem Ipsum dummy text</p>
+                                              </div>                  
+                  
+                                              <div class="f-child-wrap-inner-bottom">
+                                                <div class="overlay-icon"></div>
+                                                <h6 class="mb-1">Xoloitzcuintle</h6>
+                                                  <p>Lorem Ipsum dummy text
+                                                      Lorem Ipsum dummy text</p>
+                                              </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                  
+                  
+                  
+                                      <div class="bottom-wrap">                                          
+                                          <div class="f-child-wrap border-style">
+                                            <div class="mother-md-bottom d-flex">
+                                              <div class="avatar-sm flex-shrink-0"><img class="w-100 rounded" src="/img/dog-md-8.jpg" alt=""></div>
+                                              <div class="flex-grow-1 ms-3">
+                                                <h5 class="fs-16 mb-1">Mother</h5>
+                                              <p class="mb-0">Var son of Czar</p>
+                                              </div>
+                                          </div>
+                                              
+                                              <div class="inner-child-wrap">
+                                                <div class="f-child-wrap-inner-top">
+                                                  <div class="overlay-icon"></div>
+                                                  <h6 class="mb-1">Xoloitzcuintle</h6>
+                                                    <p>Lorem Ipsum dummy text
+                                                        Lorem Ipsum dummy text</p>
+                                                </div>                 
+                    
+                                                <div class="f-child-wrap-inner-bottom">
+                                                  <div class="overlay-icon"></div>
+                                                  <h6 class="mb-1">Xoloitzcuintle</h6>
+                                                    <p>Lorem Ipsum dummy text
+                                                        Lorem Ipsum dummy text</p>
+                                                </div>
+                                              </div>
+                                              
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                  
+                              <div class="col-md-5 col-lg-4">
+                                  <div class="dog-col larg-f-child">
+                                      <div class="f-child-wrap border-style">
+                                          
+                                        <div class="inner-child-wrap">
+                                          <div class="f-child-wrap-inner-top">
+                                            <div class="overlay-icon"></div>
+                                            <h6 class="mb-1">Xoloitzcuintle</h6>
+                                              <p>Lorem Ipsum dummy text
+                                                  Lorem Ipsum dummy text</p>
+                                          </div>                 
+              
+                                          <div class="f-child-wrap-inner-bottom">
+                                            <div class="overlay-icon"></div>
+                                            <h6 class="mb-1">Xoloitzcuintle</h6>
+                                              <p>Lorem Ipsum dummy text
+                                                  Lorem Ipsum dummy text</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                  
+                  
+                                      <div class="f-child-wrap border-style">
+                                        <div class="inner-child-wrap">
+                                          <div class="f-child-wrap-inner-top">
+                                            <div class="overlay-icon"></div>
+                                            <h6 class="mb-1">Xoloitzcuintle</h6>
+                                              <p>Lorem Ipsum dummy text
+                                                  Lorem Ipsum dummy text</p>
+                                          </div>                 
+              
+                                          <div class="f-child-wrap-inner-bottom">
+                                            <div class="overlay-icon"></div>
+                                            <h6 class="mb-1">Xoloitzcuintle</h6>
+                                              <p>Lorem Ipsum dummy text
+                                                  Lorem Ipsum dummy text</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                  
+                                      <div class="f-child-wrap border-style">
+                                          
+                                        <div class="inner-child-wrap">
+                                          <div class="f-child-wrap-inner-top">
+                                            <div class="overlay-icon"></div>
+                                            <h6 class="mb-1">Xoloitzcuintle</h6>
+                                              <p>Lorem Ipsum dummy text
+                                                  Lorem Ipsum dummy text</p>
+                                          </div>                 
+              
+                                          <div class="f-child-wrap-inner-bottom">
+                                            <div class="overlay-icon"></div>
+                                            <h6 class="mb-1">Xoloitzcuintle</h6>
+                                              <p>Lorem Ipsum dummy text
+                                                  Lorem Ipsum dummy text</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="f-child-wrap border-style ">
+                                        <div class="inner-child-wrap">
+                                          <div class="f-child-wrap-inner-top">
+                                            <div class="overlay-icon"></div>
+                                            <h6 class="mb-1">Xoloitzcuintle</h6>
+                                              <p>Lorem Ipsum dummy text
+                                                  Lorem Ipsum dummy text</p>
+                                          </div>                 
+              
+                                          <div class="f-child-wrap-inner-bottom">
+                                            <div class="overlay-icon"></div>
+                                            <h6 class="mb-1">Xoloitzcuintle</h6>
+                                              <p>Lorem Ipsum dummy text
+                                                  Lorem Ipsum dummy text</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="dogImage" role="tabpanel" aria-labelledby="image-tab" tabindex="0">
+
+                    <button class="nav-link btn-flex fs-16 mt-3" data-bs-toggle="collapse" data-bs-target="#uploadImage" aria-expanded="false"><i class="material-symbols-outlined me-2">upload</i>Upload Image</button>
+                    <div id="uploadImage" class="collapse">   
+                        <div class="card card-body bg-rgba-primary border-0">
+                          <div class="row align-items-center">
+                            <div class="col-12">
+                              <label for="formFile" class="form-label heading">Default file input example</label>
+                            </div>
+                            <div class="col-sm-10">
+                              <input class="form-control form-control-lg" type="file" id="formFile">
+                            </div>
+                            
+                          <div class="col-sm-2">
+                            <button class="btn btn-primary btn-lg shadow-none w-120-px">Save</button>
+                          </div>
+                         
+                          </div>
+                            
+                          
+                        </div>                    
+                    </div>
+
+
+                    <div class="image-container">
+                      <a class="col glightbox" href="/img/dog-002.jpg">
+                        <img src="/img/dog-002.jpg" alt="dog">
+                      </a>
+                      <a class="col glightbox" href="/img/dog-003.jpg">
+                        <img src="/img/dog-003.jpg" alt="dog">
+                      </a>
+                      <a class="col glightbox" href="/img/dog-3.jpg">
+                        <img src="/img/dog-3.jpg" alt="dog">
+                      </a>
+                      <a class="col glightbox" href="/img/dog-004.jpg">
+                        <img src="/img/dog-004.jpg" alt="dog">
+                      </a>
+                      <a class="col glightbox" href="/img/dog-md-2.jpg">
+                        <img src="/img/dog-002.jpg" alt="dog">
+                      </a>
+                      <a class="col glightbox" href="/img/gd-1.jpg">
+                        <img src="/img/gd-1.jpg" alt="dog">
+                      </a>
+                      <a class="col glightbox" href="/img/dog-2.jpg">
+                        <img src="/img/dog-2.jpg" alt="dog">
+                      </a>
+                      <a class="col glightbox" href="/img/dog-004.jpg">
+                        <img src="/img/dog-004.jpg" alt="dog">
+                      </a>
+                      <a class="col glightbox" href="/img/dog-md-6.jpg">
+                        <img src="/img/dog-md-6.jpg" alt="dog">
+                      </a>
+                      <a class="col glightbox" href="/img/dog-md-2.jpg">
+                        <img src="/img/dog-002.jpg" alt="dog">
+                      </a>
+                      <a class="col glightbox" href="/img/gd-1.jpg">
+                        <img src="/img/gd-1.jpg" alt="dog">
+                      </a>
+                      <a class="col glightbox" href="/img/dog-2.jpg">
+                        <img src="/img/dog-2.jpg" alt="dog">
+                      </a>
+                      <a class="col glightbox" href="/img/dog-004.jpg">
+                        <img src="/img/dog-004.jpg" alt="dog">
+                      </a>
+                      <a class="col glightbox" href="/img/dog-md-6.jpg">
+                        <img src="/img/dog-md-6.jpg" alt="dog">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    </div><!-- end page container -->
+</div><!-- edn main content wrap -->
+</div>
+
+
+
+
+
+<!--  -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+<script src="./js/app.js"></script>
+
+<!-- lightbox -->
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+    const lightbox = GLightbox({
+    touchNavigation: true,
+    loop: false,
+    autoplayVideos: true
+});
+</script>
+
+<script src="https://kit.fontawesome.com/246f4ccf48.js" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+         var swiper = new Swiper(".mySwiper", {
+          //direction: "vertical",
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      //slidesPerView: 1,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+      </script>
+
+
+</body>
+</html>

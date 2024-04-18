@@ -1,0 +1,16 @@
+
+.main-content-wrap{
+    @include for-md-device{
+        margin-left: 250px;
+        @include animation-default;
+    }
+}
+.page-container{
+    background-color: var(--#{$prefix}body-bg-2);
+    padding: calc(50px + 1.5rem) 0.75rem 60px 0.75rem;
+}
+
+
+// [data-layout="vertical"]{
+    
+// }

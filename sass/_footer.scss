@@ -1,0 +1,209 @@
+/* Footer css  
+======================================================================= */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+     
+
+.footer {
+    background: linear-gradient(105deg,#1d2737 ,#101722);
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+/*END FOOTER SOCIAL DESIGN*/
+
+@media only screen and (max-width:768px) { 
+.single_footer{
+  margin-bottom:30px;
+}
+}
+.single_footer {
+    h4 {
+        color: $white;
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 20px;
+        &::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 40px;
+            background: $white;
+            margin-top: 10px;
+        }
+    }
+    p{
+        color:$white;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        a {
+            color: rgba($white,60%);
+            @include animation-default;
+            padding: .25rem;
+            display: inline-block;
+            text-transform: capitalize;
+
+            &:hover {
+                color: $primary; 
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.single_footer_address ul li{
+  color:$white;
+}
+.single_footer_address ul li span {
+    font-weight: 400;
+    color: $white;
+    line-height: 28px;
+}
+.contact_social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+/*START NEWSLETTER CSS*/
+.subscribe {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+}
+.subscribe__input {
+    background-color: rgba($white,10%);
+    border-radius: 5rem;
+    border: 0;
+    color: $white;
+    font-weight: 500;
+    height: 60px;
+    letter-spacing: 0.4px;
+    margin: 0;
+    padding: 0 150px 0 20px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    &::placeholder{
+        color: rgba($white,20%);
+    }
+    &:focus,&:focus-visible{
+        //border: none;
+        outline: none;
+        background-color: rgba($white,15%)
+    }
+}
+@media only screen and (max-width:768px) { 
+.subscribe__input{padding: 0 50px 0 20px;}
+}
+
+.subscribe__btn {
+background-color: transparent;
+border-radius: 0 25px 25px 0;
+color: $primary;
+cursor: pointer;
+display: block;
+font-size: 20px;
+height: 60px;
+position: absolute;
+right: 0;
+top: 0;
+width: 60px;
+}
+.subscribe__btn i{transition: all 0.3s ease 0s;}
+@media only screen and (max-width:768px) { 
+.subscribe__btn{
+  right:0px;
+}
+}
+
+.subscribe__btn:hover i{
+    color:$primary;
+}
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+/*END NEWSLETTER CSS*/
+
+/*START SOCIAL PROFILE CSS*/
+.social_profile {
+  margin-top:40px;
+  ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+        li{
+            float:left;
+            a {
+                text-align: center;
+                text-transform: uppercase;
+                transition: all 0.3s ease 0s;
+                margin: 0px 5px;
+                font-size: 18px;
+                color: rgba($white,50%);
+                border-radius: 50%;
+                @extend .avatar-sm;
+                @include flex-center-0;
+                border: 1px solid rgba($white,20%);
+
+                &:hover{
+                    background:$primary;
+                    border: 1px solid $primary;
+                    color:$white;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:768px) { 
+.social_profile ul li a{
+  margin-right:10px;
+  margin-bottom:10px;
+}
+}
+@media only screen and (max-width:480px) { 
+.social_profile ul li a{
+    width:40px;
+    height:40px;
+    line-height:40px;
+}
+}
+
+/*END SOCIAL PROFILE CSS*/
+.copyright {
+    margin-top: 30px;
+    padding-top: 20px;
+    color:$white;
+    font-size: 15px;
+    border-top: 1px dashed rgba($white, 10%);
+    text-align: center;
+    a{
+        color: $info;
+        transition: all 0.2s ease 0s;
+        &:hover{
+            color:$primary;
+          }
+      }
+}
+
+/* ================== */

@@ -1,0 +1,52 @@
+
+.header-main{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1020;
+    position: fixed;
+    padding: .5rem;
+    background-color: $body-bg;
+    border-bottom: 1px solid $border-color;
+    @include animation-default;
+    @include for-sm-device{
+        left: 250px;
+    }
+    @include custom-max-device(767.9px){        
+            left: 0;
+    }
+
+    .btn{
+        min-width: inherit;
+    }
+}
+.header-logo{
+    img{
+        height: 32px;
+        margin-right: 2rem;
+    }
+}
+
+.header-topbar{
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+
+    &-right{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+    .switch-account-wrap{
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+    }
+}
+.light-dark-mode{
+    margin-bottom: 0rem;
+}
+
+[data-layout-mode=dark] .light-dark-mode .bi-moon::before {
+    content: "\f1d2";
+}

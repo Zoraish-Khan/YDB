@@ -1,0 +1,134 @@
+@each $color,
+$value in $theme-colors{
+  .btn-#{$color}{
+    box-shadow: 0px 8px 8px rgba($value,15%);
+  }
+}
+.btn{  
+   // border-color: transparent;
+    background-image: none;
+    .min-100{
+      min-width: 100px;
+    }
+    // &:hover{
+    //   border-color: transparent;
+    // }
+    &:focus,&:focus-visible{
+      --#{$prefix}btn-focus-shadow-rgb: #{transparent};
+      box-shadow: none;
+      //border-color: transparent;
+    }
+    &.btn-bg-light{
+      background-color: $border-color;
+    }
+    &.btn-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      height: calc(1.5em + 1.5rem + 2px);
+      width: calc(1.5em + 1.5rem + 2px);
+      &.btn-sm{
+        width: calc(.75em + 1.1rem + 2px);
+        height: calc(.75em + 1.1rem + 2px);
+      }
+  }
+  }
+.btn-primary,.btn-secondary,.btn-success{
+  color: $white;
+  &:hover,&:focus,&:active{
+    color: $white !important;
+  }
+}
+  .btn-sm{
+    --#{$prefix}btn-padding-y-sm: #{.325rem};
+  }
+  @each $color,
+  $value in $theme-colors{
+      .btn-rgba-#{$color}{
+          color: $value;
+          background-color: rgba($value,8%);
+          &:focus,&:hover,&:checked,&:active,&.active{
+              color: $white;
+              background-color: $value;
+          }
+      }
+      .btn-light{
+        color: inherit !important;
+      }
+  }
+  
+
+  // icon outmilne btn
+
+.icon-btn-outline{
+  .btn-outline-custom{
+      display: inline-flex;
+      align-items: center;
+      --bs-btn-font-weight: 400;
+      --bs-btn-color: var(--gray-default);
+      --bs-btn-bg: var(--gray-default);
+      --bs-btn-border-color: #{$border-color};
+      --bs-btn-border-radius: .25rem;
+      --bs-btn-hover-color: var(--bs-info);
+      //--bs-btn-hover-bg: #{shade-color($info, 10%)};
+      --bs-btn-hover-border-color: #{$info};
+      --bs-btn-focus-shadow-rgb: var(--info);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #{transparent};
+      --bs-btn-active-border-color: #{$info};
+      .material-symbols-outlined{
+          margin-right: .25rem;
+      }
+      &:hover,&:focus,&:active,&.active,&:checked{
+      .material-symbols-outlined{
+         color: var(--bs-btn-active-color);;
+          
+      }
+  }
+  }
+}
+.btn-outline-custom{
+  align-items: center;
+  --bs-btn-font-weight: 400;
+  --bs-btn-border-color: #{$input-border-color};
+  --bs-btn-border-radius: .25rem;
+  //--bs-btn-hover-bg: #{shade-color($primary, 10%)};
+  --bs-btn-hover-border-color: #{$primary};
+  --bs-btn-active-bg: #{transparent};
+  --bs-btn-active-border-color: #{$primary};
+  --bs-btn-color: var(--#{$prefix}heading);
+}
+.btn-white{
+  align-items: center;
+  --bs-btn-font-weight: 400;
+  --bs-btn-color: #{$heading};
+  --bs-btn-bg: #{$white};
+  --bs-btn-border-color: #{$input-border-color};
+  --bs-btn-border-radius: .25rem;
+  --bs-btn-hover-color: var(--bs-heading);
+  --bs-btn-hover-bg: #{$white};
+ // --bs-btn-hover-bg: #{shade-color($bg-gray)};
+  --bs-btn-hover-border-color: #{$input-border-color};
+  --bs-btn-focus-shadow-rgb:#{$white};
+  --bs-btn-active-color: #{$white};
+  --bs-btn-active-bg: #{$primary};
+  --bs-btn-active-border-color: #{$primary};
+  
+}
+
+// 
+
+@each $color,
+$value in $theme-colors{
+.btn-outline-#{$color}{
+  .btn-check:checked + &,
+  :not(.btn-check) + &:active,
+  &:first-child:active,
+  &.active,
+  &:hover,
+  &.show {
+    color: $white !important;
+  }
+}
+}

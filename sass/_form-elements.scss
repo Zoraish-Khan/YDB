@@ -1,0 +1,10 @@
+.form-control,.form-select,.form-check-label{
+    box-shadow: none;
+    font-size: .9rem;
+}
+
+.modal-content{
+    .form-control,.form-select,.form-check-label{
+        font-size: .85rem;
+    }
+}

@@ -1,0 +1,74 @@
+
+$breakpoint: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,    
+    xxxl: 1920px,
+    
+);
+
+@mixin for-xs-device{
+    @media  (min-width: map-get($breakpoint, "xs")) {
+        @content;
+    }
+}
+
+@mixin for-sm-device{
+    @media  (min-width: map-get($breakpoint, "sm")) {
+        @content;
+    }
+}
+
+@mixin for-md-device {
+    @media  (min-width: map-get($breakpoint, "md")){
+        @content;
+    }
+}
+
+@mixin for-lg-device {
+    @media  (min-width: map-get($breakpoint, "lg")){
+        @content;
+    }
+}
+
+@mixin for-xl-device {
+    @media  (min-width: map-get($breakpoint, "xl")){
+        @content;
+    }
+}
+@mixin for-xxl-device {
+    @media  (min-width: map-get($breakpoint, "xxl")){
+        @content;
+    }
+}
+@mixin for-xxxl-device {
+    @media  (min-width: map-get($breakpoint, "xxxl")){
+        @content;
+    }
+}
+
+@mixin only-xs-device {
+    @media  (max-width: 375px){
+        @content;
+    }
+}
+
+@mixin custom-min-device($value: 0) {
+    @media  (min-width: $value){
+        @content;
+    }
+}
+
+@mixin custom-max-device($value: 0){
+    @media  (max-width: $value){
+        @content;
+    }
+}
+
+/// for max width media query
+
+
+

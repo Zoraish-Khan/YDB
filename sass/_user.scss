@@ -1,0 +1,37 @@
+
+// user detail pages scss
+//============================================
+.sticky-last-col{
+    tr{
+        th,td{
+            &:last-child{
+                right: 0;
+                position: sticky;
+            }
+        }
+        td{
+            &:last-child{
+                box-shadow: -3px 0 5px 0 rgba($black,.6);
+            }
+        }
+    }
+}
+
+.profile-base{
+    min-height: 200px;
+    margin: -1.2rem -12px 0 -12px;
+    background: url('../img/bg-icon.png') no-repeat top;
+    background-size: cover;
+    background-color: rgba($warning,.3);
+    position: relative;
+}
+.pullup{
+    transform: translateY(-100px);
+}
+.floating-img{
+    position: absolute;
+    left: 0;
+    img{
+        width: 200px;
+    }
+}

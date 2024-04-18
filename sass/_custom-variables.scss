@@ -1,0 +1,98 @@
+//@import "../node_modules/bootstrap/scss/functions";
+
+$primary:             #ebb751;//#363afc;
+$secondary:           #19191c;
+$tertiary:            #363afc;
+$success:             #0ecf97;
+$warning:             #efbd46;
+$danger:              #ef5f5e;
+$info:                #39afd1;
+$white:               #ffffff;
+//social media color
+$youtube:             #ff0002;
+$facebook:            #1877F2;
+$google:              #DB4437;
+$linkedin:            #007bb6;
+$twitter:             #1dcaff;
+$whatsapp:            #25D366;
+$instagram:           #405DE6;
+$color-default:       #6c757d;
+$heading:             #1e2f65;
+$text-muted:          lighten($color-default,20%);
+$body-bg:             #ffffff;
+$body-bg-2:           #f7f8fa;
+$bg-light:            #E9EBEB;
+$bg-blue-dark:        #1e2f65;
+$black:               #000000;
+$border-color:        #E8EDF2;
+$bg-gray:             #f4f5f7;
+$bg-gray:             #6c757d;
+
+$custom-colors: (
+  "purple":        #6f42c1,
+  'blue':          #363afc,
+  "indigo":        #6610f2,
+  "pink":          #d63384,
+  "orange":        #fd7e14,
+  "youtube":       #ff0002,
+  "facebook":      #1877F2,
+  "google":        #DB4437,
+  "linkedin":      #007bb6,
+  "twitter":       #1dcaff,
+  "whatsapp":      #25D366,
+  "instagram":     #405DE6,
+  "github":        #6e5494,
+  "pinterest":     #e62523,
+);
+// form variables
+$input-bg:            $white;
+$input-box-shadow:     none;
+$box-shadow-inset:     none;
+$input-placeholder-color:  #BBBBBB;
+$input-border-color:    #d4dbe2;
+
+$body-color:           $color-default;
+
+$pagination-bg:        #{$white};
+// form var
+//$input-border-color: #dadfe5;
+$input-color:        #335268;
+$input-placeholder-color: #335268;
+
+$min-contrast-ratio:   2.5 !default;
+// border radius
+$border-radius: .35rem;
+$accordion-color:                    $color-default;
+$accordion-btn-bg:                   $white;
+//// 
+$variable-prefix:             null !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix:                      $variable-prefix !default;
+// card var
+$card-border-color:    #{$border-color};
+// table
+$table-striped-bg:       #F6F8FB;
+$enable-negative-margins: true;
+$social-colors:(
+    "youtube":      $youtube,
+    "facebook":     $facebook,
+    "google":       $google,
+    "linkedin":     $linkedin,
+    "twitter":      $twitter,
+    "whatsapp":     $whatsapp,
+    "instagram":    $instagram
+);
+
+:root{   
+    --bs-body-color: #{$color-default};
+    --bs-heading: #{$heading};
+    --bs-black: #{$black};
+    --bs-body-bg: #{$body-bg};
+    --bs-border-color: #{$border-color};
+    --bs-nav-link-hover-color: #{$primary};   
+    --bs-card-border-color: #{$border-color};
+    --bs-body-bg-2: #{$body-bg-2};
+}
+
+
+    
+
